@@ -1,0 +1,69 @@
+#+TITLE: gptel-tools Collection
+#+AUTHOR: Your Name
+#+EMAIL: your.email@example.com
+#+DATE: <2025-01-01 Wed>
+
+* Introduction
+
+This is a personal collection of gptel-tools - custom tools and configurations for [[https://github.com/karthink/gptel][gptel]], an Emacs client for LLM chat.
+
+* Project Structure
+
+#+BEGIN_SRC text
+.
+├── README.org          # This file
+├── tools/              # Custom tools directory
+├── config/             # Configuration files
+└── examples/           # Usage examples
+#+END_SRC
+
+* Features
+
+- **Custom Tools**: Extend gptel with specialized functionality
+- **Configuration**: Pre-configured setups for different use cases
+- **Examples**: Ready-to-use examples and templates
+
+* Installation
+
+1. Clone this repository:
+   #+BEGIN_SRC shell
+   git clone https://github.com/yourusername/gptel-tools.git
+   #+END_SRC
+
+2. Add to your Emacs configuration:
+   #+BEGIN_SRC emacs-lisp
+   (add-to-list 'load-path "~/path/to/gptel-tools")
+   (require 'gptel-tools)
+   #+END_SRC
+
+* Usage
+
+Basic usage with custom tools:
+
+#+BEGIN_SRC emacs-lisp
+;; Start gptel with custom tools
+(gptel tools:gptel-tools)
+#+END_SRC
+
+* Available Tools
+
+- [[file:tools/tool1.el][Tool 1]]: Description of first tool
+- [[file:tools/tool2.el][Tool 2]]: Description of second tool
+- [[file:tools/tool3.el][Tool 3]]: Description of third tool
+
+* Configuration
+
+See [[file:config/default.el][default configuration]] for basic setup.
+
+* Contributing
+
+This is a personal collection, but feel free to fork and adapt for your own use.
+
+* License
+
+MIT License - see [[file:LICENSE][LICENSE]] file for details.
+
+* Links
+
+- [[https://github.com/karthink/gptel][Official gptel repository]]
+- [[https://github.com/yourusername/gptel-tools][This repository]]
